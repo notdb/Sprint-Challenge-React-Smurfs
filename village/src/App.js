@@ -45,13 +45,22 @@ class App extends Component {
       .catch(err => console.log(err));
   };
 
+  deleteSmurf = id => {
+    axios
+      .delete(`http://localhost:3333/smurfs/${id}`)
+      .then(res => {
+        this.setState({ smurfs: res.data });
+      })
+      .catch(err => console.log(err));
+  };
+
   render() {
     return (
       <div className="App">
         <header>
           Big Links
           <nav className="nav-links">
-            <Link exact to="/">
+            <Link exact="true" to="/">
               Home
             </Link>
             <p />
@@ -59,9 +68,15 @@ class App extends Component {
           </nav>
         </header>
         <Route
-          exact
+          exact="true"
           path="/"
-          render={props => <Smurfs smurfs={this.state.smurfs} />}
+          render={props => (
+            <Smurfs
+              {...props}
+              smurfs={this.state.smurfs}
+              deleteSmurf={this.deleteSmurf}
+            />
+          )}
         />
         <Route
           path="/add-smurf"
