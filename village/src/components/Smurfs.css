@@ -1,0 +1,19 @@
+.Smurfs {
+    margin: 25px auto 0;
+    border: 2px solid black;
+    width: 65em;
+    height: 828px;
+    background-color: #086FFF;
+
+
+
+}
+
+    .Smurfs2 {
+	display:flex;
+	justify-content: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	padding-left: -40px;
+  
+}

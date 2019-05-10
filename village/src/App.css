@@ -1,3 +1,26 @@
 .App {
-  text-align: center;
+    text-align: center;
+   
+}
+
+
+header {
+    width: 65em;
+    margin: 25px auto 0;
+    height: 5em;
+   background-color: #D1F686;
+    border: 2px solid black;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+   
+}
+
+.nav-links {
+     text-decoration: none;
+}
+
+body {
+    background-color: #9CF8ED;
+    box-sizing: border-box;
 }

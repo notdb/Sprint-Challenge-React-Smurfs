@@ -58,7 +58,6 @@ class App extends Component {
     return (
       <div className="App">
         <header>
-          Big Links
           <nav className="nav-links">
             <Link exact="true" to="/">
               Home

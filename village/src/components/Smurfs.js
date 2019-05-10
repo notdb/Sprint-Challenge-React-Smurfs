@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
 import Smurf from "./Smurf";
+import "./Smurfs.css";
 
 class Smurfs extends Component {
   constructor() {
@@ -11,7 +12,7 @@ class Smurfs extends Component {
     return (
       <div className="Smurfs">
         <h1>Smurf Village</h1>
-        <ul>
+        <div className="Smurfs2">
           {this.props.smurfs.map(smurf => {
             return (
               <Smurf
@@ -24,7 +25,7 @@ class Smurfs extends Component {
               />
             );
           })}
-        </ul>
+        </div>
       </div>
     );
   }
