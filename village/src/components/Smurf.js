@@ -13,7 +13,10 @@ const Smurf = props => {
       <h3>{props.name}</h3>
       <strong>{props.height} tall</strong>
       <p>{props.age} smurf years old</p>
-      <button onClick={deleteSmurf}>Delete</button>
+      <details>
+        <summary>Open me to delete smurf</summary>
+        <button onClick={deleteSmurf}>Delete</button>
+      </details>
     </div>
   );
 };
